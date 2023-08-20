@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/air-css/air.git"
+    "url": "git://github.com/aircss/air.git"
   },
   "scripts": {
     "lint": "eslint . --ext .js",
@@ -34,7 +34,7 @@
   },
   "description": "Air is a lightweight functional CSS library.",
   "bugs": {
-    "url": "https://github.com/air-css/air/issues"
+    "url": "https://github.com/aircss/air/issues"
   },
   "homepage": "https://aircss.io",
   "main": "index.js",
