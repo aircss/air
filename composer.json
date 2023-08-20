@@ -1,0 +1,23 @@
+{
+  "name": "air-css/aircss",
+  "description": "Air is a lightweight functional CSS library.",
+  "keywords": [
+    "air",
+    "css",
+    "aircss",
+    "responsive",
+    "mobile-first",
+    "front-end"
+  ],
+  "homepage": "http://aircss.io/",
+  "authors": [
+    {
+      "name": "Morgan Delahaye",
+      "email": "morgan.delahaye@tutanota.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/aircss/air/issues"
+  },
+  "license": "BSD-2-Clause"
+}

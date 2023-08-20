@@ -1,0 +1,61 @@
+{
+  "name": "aircss",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/air-css/air.git"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "prepare": "grunt release",
+    "test": "grunt test && tap test/*.js --no-coverage"
+  },
+  "files": [
+    "build/"
+  ],
+  "devDependencies": {
+    "@lodder/grunt-postcss": "^3.1.1",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.0.0",
+    "eslint-plugin-react": "^7.31.10",
+    "grunt": "^1.6.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-compress": "^2.0.0",
+    "grunt-contrib-concat": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-csso": "^2.2.4",
+    "husky": "^8.0.1",
+    "normalize.css": "^8.0.1",
+    "postcss": "^8.4.28",
+    "tap": "^16.0.0"
+  },
+  "description": "Air is a lightweight functional CSS library.",
+  "bugs": {
+    "url": "https://github.com/air-css/air/issues"
+  },
+  "homepage": "https://aircss.io",
+  "main": "index.js",
+  "browser": "build/air.min.css",
+  "style": "build/air.css",
+  "keywords": [
+    "air",
+    "css",
+    "aircss",
+    "responsive",
+    "mobile-first",
+    "front-end"
+  ],
+  "authors": [
+    "Morgan Delahaye <morgan.delahaye@tutanota.com>"
+  ],
+  "license": "BSD-2-Clause",
+  "browserslist": "> 1%",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  }
+}
