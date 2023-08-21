@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint . --ext .js",
     "prepare": "grunt release",
-    "test": "grunt test && tap test/*.js --no-coverage"
+    "test": "grunt test && tap test/*.js --no-coverage",
+    "dev": "node serve.js"
   },
   "files": [
     "build/"
