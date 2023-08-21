@@ -75,7 +75,11 @@ module.exports = function (grunt) {
         // -- CSSMin Config --------------------------------------------------------
 
         csso: {
+
             dynamic_mappings: {
+                options: {
+                    report: 'gzip',
+                },
                 expand: true,
                 cwd: 'build/',
                 src: ['*.css', '!*.min.css'],
