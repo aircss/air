@@ -1,0 +1,20 @@
+/*
+
+  SKINS
+  Docs: http://aircss.io/docs/themes/skins/
+
+  Classes for setting foreground and background colors on elements.
+  If you haven't declared a border color, but set border on an element, it will
+  be set to the current text color.
+
+*/
+
+/*
+  generated content
+.<%= name %> { color: <%= value %>; }
+.hover-<%= name %>:hover { color: <%= value %>; }
+
+.bg--<%= name %> { background-color: <%= value %>; }
+.hover-bg--<%= name %>:hover { background-color: <%= value %>; }
+  end of generated content
+*/
