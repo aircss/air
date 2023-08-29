@@ -1,0 +1,27 @@
+/*
+
+   TEXT TRANSFORM
+   Docs: http://aircss.io/docs/typography/text-transform.html
+
+   Base:
+     tt = text-transform
+
+   Modifiers
+     c = capitalize
+     l = lowercase
+     t = title
+     u = uppercase
+     n = none
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+.ttt:first-letter { text-transform: uppercase; }
+.ttc { text-transform: capitalize; }
+.ttl { text-transform: lowercase; }
+.ttu { text-transform: uppercase; }
+.ttn { text-transform: none; }

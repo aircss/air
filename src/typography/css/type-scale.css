@@ -1,0 +1,34 @@
+/*
+  TYPE SCALE
+  Docs: http://aircss.io/docs/typography/type-scale
+
+  Base:
+    f = font-size
+
+  Modifiers
+    -title = title dedicated size
+    -subtitle = subtitle dedicated size
+    1 = 1st step in size scale
+    2 = 2nd step in size scale
+    3 = 3rd step in size scale
+    4 = 4th step in size scale
+    5 = 5th step in size scale
+    6 = 6th step in size scale
+    7 = 7th step in size scale
+    8 = 8th step in size scale
+*/
+
+
+/* Type Scale */
+
+/* csslint font-sizes: false */
+.f-title { font-size: var(--font-size-1, 2.5rem); }
+.f-subtitle { font-size: var(--font-size-1, 2rem); }
+.f1 { font-size: var(--font-size-2, 1.75rem); }
+.f2 { font-size: var(--font-size-3, 1.5rem); }
+.f3 { font-size: var(--font-size-4, 1.375rem); }
+.f4 { font-size: var(--font-size-5, 1.25rem); }
+.f5 { font-size: var(--font-size-6, 1.125rem); }
+.f6 { font-size: var(--font-size-7, 1rem); }
+.f7 { font-size: var(--font-size-8, 0.875rem); }
+.f8 { font-size: var(--font-size-9, 0.75rem); }
