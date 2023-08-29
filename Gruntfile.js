@@ -24,9 +24,42 @@ module.exports = function (grunt) {
                 flatten: true
             },
 
+            doc: {
+                expand : true,
+                src    : '**/*.html',
+                cwd    : 'src/',
+                dest   : 'build/doc/',
+            },
+
             release: {
                 src : '{LICENSE,README.md,HISTORY.md}',
                 dest: 'build/'
+            }
+        },
+
+        // -- Generate CSS ---------------------------------------------------------
+
+        generate: {
+            colors: {
+                options: {
+                    type: 'variables',
+                    variables: 'src/variables/colors.css',
+                },
+
+                expand: true,
+                src   : ['build/*.css']
+            }
+        },
+
+        skins: {
+            template: {
+                options: {
+                    type: 'variables',
+                    variables: 'src/variables/colors.css',
+                },
+
+                expand: true,
+                src   : ['build/doc/**/*.html']
             }
         },
 
@@ -35,15 +68,39 @@ module.exports = function (grunt) {
         concat: {
             build: {
                 files: [
-                    {'build/base.css': [
-                        'node_modules/normalize.css/normalize.css',
-                        'build/base.css'
+                    {'build/typography.css': [
+                        'build/type-scale.css',
+                        'build/measure.css',
+                        'build/line-height.css',
+                        'build/tracking.css',
+                        'build/font-weight.css',
+                        'build/font-style.css',
+                        'build/vertical-align.css',
+                        'build/text-align.css',
+                        'build/text-transform.css',
+                        'build/text-decoration.css',
+                        'build/white-space.css',
+                        'build/font-family.css',
                     ]},
 
-                    // Rollups
+                    {'build/layout.css': [
+                        'build/display.css',
+                        'build/spacing.css',
+                        'build/widths.css',
+                    ]},
 
+                    {'build/theming.css': [
+                        'build/skins.css',
+                        'build/borders.css',
+                        'build/border-colors.css',
+                    ]},
+
+                    // Roll-ups
                     {'build/<%= nick %>.css': [
-                        'build/base.css',
+                        'node_modules/normalize.css/normalize.css',
+                        'build/typography.css',
+                        'build/layout.css',
+                        'build/theming.css',
                     ]},
                 ]
             }
@@ -55,6 +112,7 @@ module.exports = function (grunt) {
             options: {
                 processors: [
                     require('autoprefixer')(),
+                    require('postcss-css-variables')(),
                 ],
             },
             dist: {
@@ -69,7 +127,7 @@ module.exports = function (grunt) {
                 csslintrc: '.csslintrc'
             },
 
-            base   : ['src/base/css/*.css'],
+            base   : ['src/*/css/*.css'],
         },
 
         // -- CSSMin Config --------------------------------------------------------
@@ -79,6 +137,7 @@ module.exports = function (grunt) {
             dynamic_mappings: {
                 options: {
                     report: 'gzip',
+                    forceMediaMerge: true,
                 },
                 expand: true,
                 cwd: 'build/',
@@ -122,8 +181,8 @@ module.exports = function (grunt) {
 
         observe: {
             src: {
-                files: 'src/**/css/*.css',
-                tasks: ['test', 'suppress', 'build'],
+                files: 'src/**/*',
+                tasks: ['test', 'build'],
 
                 options: {
                     interrupt: true
@@ -149,13 +208,17 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', ['test', 'build']);
     grunt.registerTask('test', ['csslint']);
+
     grunt.registerTask('build', [
         'clean:build',
         'copy:build',
+        'copy:doc',
+        'generate',
+        'skins',
         'concat:build',
         'postcss',
         'csso',
-        'license'
+        'license',
     ]);
 
     // Makes the `watch` task run a build first.

@@ -6,10 +6,10 @@ var path = require('path');
 
 http.createServer(function (request, response) {
 
-    let filePath = path.join(__dirname, 'src', request.url);
+    let filePath = path.join(__dirname, 'build', request.url);
 
     // hijack normalize.css queries to get the npm installed version
-    if (filePath.endsWith('/src/normalize.css'))
+    if (filePath.endsWith('/build/normalize.css'))
         filePath = require.resolve('normalize.css');
 
     // append index.html for directory URLs
