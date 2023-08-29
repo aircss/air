@@ -5,5 +5,6 @@
     "fallback-colors"          : false,
     "order-alphabetical"       : false,
     "star-property-hack"       : false,
-    "unqualified-attributes"   : false
+    "unqualified-attributes"   : false,
+    "known-properties"         : false
 }
