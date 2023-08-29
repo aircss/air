@@ -1,0 +1,34 @@
+/*
+
+  FLEXBOX
+
+  Docs: http://aircss.io/docs/layout/flex
+
+  Base:
+    flex
+
+  Modifiers:
+    -auto
+    -none
+
+    -nowrap
+    -column
+    -row
+    -wrap
+
+  Extensions:
+    -reverse
+
+*/
+
+.flex-auto { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+.flex-nowrap { flex-wrap: nowrap; }
+.flex-column { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.flex-wrap { flex-wrap: wrap; }
+
+.flex-column-reverse { flex-direction: column-reverse; }
+.flex-row-reverse { flex-direction: row-reverse; }
+.flex-wrap-reverse { flex-wrap: wrap-reverse; }
