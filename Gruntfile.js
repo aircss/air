@@ -96,7 +96,7 @@ module.exports = function (grunt) {
                         'build/align-content.css',
                         'build/align-items.css',
                         'build/align-self.css',
-                        'build/bow-sizing.css',
+                        'build/box-sizing.css',
                         'build/spacing.css',
                         'build/floats.css',
                         'build/clearfix.css',
