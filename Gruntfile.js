@@ -100,6 +100,7 @@ module.exports = function (grunt) {
                         'build/position.css',
                         'build/coordinates.css',
                         'build/z-index.css',
+                        'build/scale.css',
                     ]},
 
                     {'build/theming.css': [

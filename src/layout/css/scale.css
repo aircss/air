@@ -1,0 +1,19 @@
+.scale-25 {
+	transform: scale(1.25);
+}
+
+.scale-50 {
+	transform: scale(1.5);
+}
+
+.scale-100 {
+	transform: scale(2);
+}
+
+.scale-150 {
+	transform: scale(3);
+}
+
+.scale-200 {
+	transform: scale(4);
+}
