@@ -17,6 +17,12 @@ module.exports = function (grunt) {
         // -- Copy Config ----------------------------------------------------------
 
         copy: {
+            assets: {
+                src    : 'assets/*',
+                dest   : 'build/',
+                expand : true,
+            },
+
             build: {
                 src    : 'src/**/css/*.css',
                 dest   : 'build/',
@@ -240,6 +246,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:build',
+        'copy:assets',
         'copy:build',
         'copy:doc',
         'generate',
