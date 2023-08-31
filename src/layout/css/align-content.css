@@ -15,3 +15,9 @@
 .content-between { align-content: space-between; }
 .content-around { align-content: space-around; }
 .content-stretch { align-content: stretch; }
+
+.justify-start   { justify-content: flex-start; }
+.justify-end     { justify-content: flex-end; }
+.justify-center  { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around  { justify-content: space-around; }
