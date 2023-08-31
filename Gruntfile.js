@@ -132,10 +132,10 @@ module.exports = function (grunt) {
                     // Roll-ups
                     {'build/<%= nick %>.css': [
                         'node_modules/normalize.css/normalize.css',
+                        'build/elements.css',
                         'build/typography.css',
                         'build/layout.css',
                         'build/theming.css',
-                        'build/elements.css',
                     ]},
                 ]
             }
