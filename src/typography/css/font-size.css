@@ -1,6 +1,6 @@
 /*
-  TYPE SCALE
-  Docs: http://aircss.io/docs/typography/type-scale
+  FONT SIZE
+  Docs: http://aircss.io/docs/typography/font-size
 
   Base:
     f = font-size
@@ -19,11 +19,10 @@
 */
 
 
-/* Type Scale */
-
 /* csslint font-sizes: false */
 .f-title { font-size: var(--font-size-1, 2.5rem); }
 .f-subtitle { font-size: var(--font-size-1, 2rem); }
+
 .f1 { font-size: var(--font-size-2, 1.75rem); }
 .f2 { font-size: var(--font-size-3, 1.5rem); }
 .f3 { font-size: var(--font-size-4, 1.375rem); }
