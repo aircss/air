@@ -29,7 +29,7 @@
 .db { display: block; }
 .dib { display: inline-block; }
 
-.df { display: flex; }
+.df, .flex { display: flex; }
 .dif { display: inline-flex; }
 
 .dt { display: table; }
