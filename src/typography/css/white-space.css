@@ -12,3 +12,9 @@
 .ws-normal { white-space: normal; }
 .nowrap { white-space: nowrap; }
 .pre { white-space: pre; }
+
+.truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
