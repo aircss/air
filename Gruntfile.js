@@ -75,13 +75,12 @@ module.exports = function (grunt) {
             build: {
                 files: [
                     {'build/typography.css': [
-                        'build/type-scale.css',
+                        'build/font-size.css',
                         'build/measure.css',
                         'build/line-height.css',
                         'build/tracking.css',
                         'build/font-weight.css',
                         'build/font-style.css',
-                        'build/vertical-align.css',
                         'build/text-align.css',
                         'build/text-transform.css',
                         'build/text-decoration.css',
@@ -105,6 +104,7 @@ module.exports = function (grunt) {
                         'build/heights.css',
                         'build/position.css',
                         'build/coordinates.css',
+                        'build/vertical-align.css',
                         'build/z-index.css',
                         'build/scale.css',
                     ]},
