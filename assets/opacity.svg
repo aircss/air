@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <path
+     d="m 14,10 h -4 v 4 h 4 z m 1,0 v 4 h 4 v -4 z m -1,9 v -4 h -4 v 4 z m 2,0 h 3 V 16 H 16 Z M 14,5 h -4 v 4 h 4 z m 2,0 v 3 h 3 V 5 Z M 9,10 H 5 v 4 H 9 Z M 8,19 V 16 H 5 v 3 z M 8,5 H 5 V 8 H 8 Z M 4,3 h 16 c 0.5523,0 1,0.44772 1,1 v 16 c 0,0.5523 -0.4477,1 -1,1 H 4 C 3.44772,21 3,20.5523 3,20 V 4 C 3,3.44772 3.44772,3 4,3 Z"
+     id="path1" />
+  <rect
+     style="fill:#000000;stroke:none;stroke-width:1.00157;stroke-linejoin:round;fill-opacity:1"
+     id="rect1"
+     width="4.3076062"
+     height="3.8095686"
+     x="4.2226501"
+     y="4.5032883" />
+  <rect
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-linejoin:round"
+     id="rect2"
+     width="4.4966359"
+     height="5.018301"
+     x="9.6245928"
+     y="9.4904671" />
+  <rect
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-linejoin:round"
+     id="rect3"
+     width="4.4966359"
+     height="5.018301"
+     x="15.346249"
+     y="4.0432558" />
+  <rect
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-linejoin:round"
+     id="rect4"
+     width="4.4966359"
+     height="5.018301"
+     x="15.651663"
+     y="15.300291" />
+  <rect
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-linejoin:round"
+     id="rect5"
+     width="4.4966359"
+     height="5.018301"
+     x="4.2455912"
+     y="15.247681" />
+</svg>
