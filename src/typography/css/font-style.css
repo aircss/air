@@ -3,10 +3,6 @@
    FONT STYLE
    Docs: http://aircss.io/docs/typography/font-style.html
 
-   Media Query Extensions:
-     -m  = medium
-     -l  = large
-
 */
 
-.fs-italic, .i { font-style: italic; }
+.i { font-style: italic; }
