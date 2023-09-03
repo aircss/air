@@ -31,10 +31,10 @@ module.exports = function (grunt) {
             },
 
             doc: {
-                expand : true,
                 src    : '**/*.html',
-                cwd    : 'src/',
-                dest   : 'build/doc/',
+                cwd    : 'documentation/',
+                dest   : 'build/',
+                expand : true,
             },
 
             release: {
@@ -216,13 +216,14 @@ module.exports = function (grunt) {
 
         observe: {
             src: {
-                files: 'src/**/*',
+                files: ['src/**/*', 'documentation/**'],
                 tasks: ['test', 'build'],
 
                 options: {
                     interrupt: true
                 }
             }
+
         }
     });
 
