@@ -4,9 +4,15 @@
    Docs: http://aircss.io/docs/typography/text-decoration.html
 
 
-   Media Query Extensions:
-     -m  = medium
-     -l  = large
+  Underline and strikethrough decorations on a text are respectively used to add an emphasis or 
+  epanorthosis to all or part of the latter.
+
+  Mnemonics
+  =========
+
+  Base:
+    strike
+    underline
 
 */
 
