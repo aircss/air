@@ -1,21 +1,40 @@
 /*
 
   FONT WEIGHT
-  Docs: http://aircss.io/docs/themes/font-weight/
+  Docs: http://aircss.io/docs/typography/font-weight.html
 
-  Base
+  Varying the font-weight of different pieces of text can help create contrast between pieces of
+  information. It can help call attention to a piece of content, or help to make a smaller font-size
+  a bit more readable. 
+
+  Mnemonics
+  =========
+
+  Base:
     fw = font-weight
 
   Modifiers:
-    1 = literal value 100
-    2 = literal value 200
-    3 = literal value 300
-    4 = literal value 400
-    5 = literal value 500
-    6 = literal value 600
-    7 = literal value 700
-    8 = literal value 800
-    9 = literal value 900
+    -normal = normal -- 400
+    -bold = bold -- 700
+
+    1 = thin -- 100
+    2 = extra-light -- 200
+    3 = light -- 300
+    4 = normal -- 400
+    5 = medium -- 500
+    6 = semi-bold -- 600
+    7 = bold -- 700
+    8 = extra-bold -- 800
+    9 = black -- 900
+
+  Optional extensions:
+    -m = medium width container
+    -l = large width container
+
+  Shorthand
+  =========
+
+  It is possible to use the class name `b` instead of `fw-bold` to get the same effect.
 
 */
 
