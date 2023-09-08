@@ -1,26 +1,26 @@
 /*
 
-   TEXT TRANSFORM
-   Docs: http://aircss.io/docs/typography/text-transform.html
+  TEXT TRANSFORM
+  Docs: http://aircss.io/docs/typography/text-transform.html
 
-   Base:
-     tt = text-transform
+  Uppercase, title case and sentence can all be used in the same application. But if you are using
+  title case for headings, all headings need to be in title case. Likewise, you can use sentence
+  case for paragraphs. Use uppercase for standout texts only. The most important thing is
+  consistency.
 
-   Modifiers
-     c = capitalize
-     l = lowercase
-     t = title
-     u = uppercase
-     n = none
+  Mnemonics
+  =========
 
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
+  Base:
+    tt = text-transform
+
+  Modifiers:
+    s = sentence — first letter of the first word is capitalized
+    t = title case — first letter of each word is capitalized
+    u = uppercase
 
 */
 
-.ttt:first-letter { text-transform: uppercase; }
-.ttc { text-transform: capitalize; }
-.ttl { text-transform: lowercase; }
+.tts:first-letter { text-transform: uppercase; }
+.ttt { text-transform: capitalize; }
 .ttu { text-transform: uppercase; }
