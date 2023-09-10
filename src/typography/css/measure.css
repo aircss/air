@@ -1,13 +1,27 @@
 /*
   MEASURE
-  Docs: http://aircss.io/docs/typography/measure
+  Docs: http://aircss.io/docs/typography/measure.html
+
+  Measure or line length is the distance between the left and right edges of a text block. Overly
+  long lines are a common problem, but they're easy to correct. Shorter lines will make a big
+  difference in the legibility and professionalism of your layout.
 
 
-  Measure refers to the length of a line of text. It is one of the most important aspects of
-  readability.
+  Mnemonics
+  =========
+
+  Base:
+    tt = text-transform
+
+  Modifiers:
+    s = sentence — first letter of the first word is capitalized
+    t = title case — first letter of each word is capitalized
+    u = uppercase
+
+
 
 */
 
-.measure { max-width: 66ch; }
 .measure-wide { max-width: 80ch; }
 .measure-narrow { max-width: 45ch; }
+.measure-medium, .measure { max-width: 66ch; }
