@@ -1,11 +1,26 @@
 /*
 
   LINE HEIGHT
-  Docs: http://aircss.io/docs/typography/line-height
+  Docs: http://aircss.io/docs/typography/line-height.html
+
+  It’s always a good practice to add some <span class="i">leading</span> to the type setting to
+  open up the space between the line of the text. There is a sweet spot between too tight and too
+  open leading which depends on the designer’s visual judgment.
+
+
+  Mnemonics
+  =========
+
+  Base:
+    lh = line height
+
+  Modifiers:
+    -solid = solid leading (1)
+    -title = title leading (1.25)
+    -body = body leading (1.5)
 
 */
 
 .lh-solid { line-height: var(--line-height-solid, 1); }
 .lh-title { line-height: var(--line-height-title, 1.25); }
 .lh-body  { line-height: var(--line-height-body, 1.5); }
-
