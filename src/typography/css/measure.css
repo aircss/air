@@ -11,7 +11,7 @@
   =========
 
   Bases:
-    measure
+    ll = line-length
 
   Modifiers:
     -narrow — average length of 45 characters
@@ -30,6 +30,6 @@
 
 */
 
-.measure-wide { max-width: 80ch; }
-.measure-narrow { max-width: 45ch; }
-.measure-medium, .measure { max-width: 66ch; }
+.lln { max-width: 45ch; }
+.llm { max-width: 66ch; }
+.llw { max-width: 80ch; }
