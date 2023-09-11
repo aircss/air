@@ -1,20 +1,36 @@
 /*
 
   TEXT ALIGN
-  Docs: http://aircss.io/docs/typography/text-align/
+  Docs: http://aircss.io/docs/typography/text-align.html
 
-  Base
+  Text alignment is a small but significant part of the interface. Alignment affects how our brain
+  scans the content on a screen. A proper text alignment is one of the most distinct indicators of a
+  professionally crafted digital product.
+
+
+  Mnemonics
+  =========
+
+  Base:
     t = text-align
 
-  Modifiers
+  Modifiers:
     l = left
     r = right
     c = center
     j = justify
+
+  Optional extensions:
+    -m = medium width container
+    -l = large width container
 
 */
 
 .tl  { text-align: left; }
 .tr  { text-align: right; }
 .tc  { text-align: center; }
-.tj  { text-align: justify; }
+
+.tj  {
+  text-align: justify;
+  hyphens: auto;
+}
