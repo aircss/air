@@ -10,15 +10,23 @@
   Mnemonics
   =========
 
-  Base:
-    tt = text-transform
+  Bases:
+    measure
 
   Modifiers:
-    s = sentence — first letter of the first word is capitalized
-    t = title case — first letter of each word is capitalized
-    u = uppercase
+    -narrow — average length of 45 characters
+    -medium — average length of 66 characters
+    -wide — average length of 80 characters
+
+  Optional extensions:
+    -m = medium width container
+    -l = large width container
 
 
+  Shorthand
+  =========
+
+  It is possible to use the class name `measure` instead of `measure-medium`.
 
 */
 

@@ -1,11 +1,20 @@
 /*
-  FONT SIZE
-  Docs: http://aircss.io/docs/typography/font-size
 
-  Base:
+  FONT SIZE
+  Docs: http://aircss.io/docs/typography/font-size.html
+
+  To create and design an easily readable interface, you only need a simple ratio-based scale to
+  provide a wide array of visual possibilities and an efficient way to prioritize the information
+  on anything you can build from web pages to a full-featured webapp.
+
+
+  Mnemonics
+  =========
+
+  Bases:
     f = font-size
 
-  Modifiers
+  Modifiers:
     -title = title dedicated size
     -subtitle = subtitle dedicated size
     1 = 1st step in size scale
@@ -16,6 +25,11 @@
     6 = 6th step in size scale
     7 = 7th step in size scale
     8 = 8th step in size scale
+
+  Optional extensions:
+    -m = medium width container
+    -l = large width container
+
 */
 
 
