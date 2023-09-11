@@ -1,15 +1,36 @@
 /*
 
-   LETTER SPACING
-   Docs: http://aircss.io/docs/typography/tracking/
+  TRACKING
+  Docs: http://aircss.io/docs/typography/tracking.html
 
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
+  Tracking affects the visual density of a word, phrase or paragraph. Decreasing the tracking makes
+  the words appear more compact, while increasing tracking increases the amount of white space
+  between letters and words, creating a more airy effect.
+
+
+  Mnemonics
+  =========
+
+  Bases:
+    tracked
+
+  Modifiers:
+    -tight
+    -large
+    -oversize
+
+  Optional extensions:
+    -m = medium width container
+    -l = large width container
+
+
+  Shorthand
+  =========
+
+  It is possible to use the class name `tracked` instead of `tracked-large`.
 
 */
 
-.tracked-large, .tracked { letter-spacing:  .1em; }
-.tracked-mega { letter-spacing:  .25em; }
 .tracked-tight { letter-spacing: -.05em; }
+.tracked-large, .tracked { letter-spacing:  .1em; }
+.tracked-oversize { letter-spacing:  .25em; }
