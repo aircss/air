@@ -1,11 +1,23 @@
 /*
 
-   WHITE SPACE
+  WHITE SPACE
+  Docs: http://aircss.io/docs/typography/white-space.html
 
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
+  Sometime it is necessary to set a different strategy to handle white spaces and new lines from the
+  default one web browser use in an element.
+
+
+  Mnemonics
+  =========
+
+  Bases:
+    pre
+    nowrap
+    truncate
+
+  Optional extensions:
+    -m = medium width container
+    -l = large width container
 
 */
 
