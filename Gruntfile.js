@@ -69,6 +69,20 @@ module.exports = function (grunt) {
             }
         },
 
+        modifiers: {
+            containers: {
+                expand: true,
+                src : [
+                    'build/font-size.css',
+                    'build/font-weight.css',
+                    'build/tracking.css',
+                    'build/measure.css',
+                    'build/text-align.css',
+                    'build/white-space.css',
+                ]
+            }
+        },
+
         // -- Concat Config --------------------------------------------------------
 
         concat: {
@@ -89,6 +103,7 @@ module.exports = function (grunt) {
                     ]},
 
                     {'build/layout.css': [
+                        'build/container.css',
                         'build/display.css',
                         'build/flex.css',
                         'build/order.css',
@@ -252,6 +267,7 @@ module.exports = function (grunt) {
         'copy:doc',
         'generate',
         'skins',
+        'modifiers:containers',
         'concat:build',
         'postcss',
         'csso',
