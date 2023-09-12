@@ -30,6 +30,8 @@
 
 */
 
+/* generate: container-rule */
 .lln { max-width: 45ch; }
 .llm { max-width: 66ch; }
 .llw { max-width: 80ch; }
+/* end generate */

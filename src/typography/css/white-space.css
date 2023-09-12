@@ -21,6 +21,7 @@
 
 */
 
+/* generate: container-rule */
 .nowrap { white-space: nowrap; }
 .pre { white-space: pre; }
 
@@ -29,3 +30,4 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+/* end generate */

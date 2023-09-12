@@ -31,6 +31,9 @@
 
 */
 
+/* generate: container-rule */
 .tracked-tight { letter-spacing: -.05em; }
-.tracked-large, .tracked { letter-spacing:  .1em; }
-.tracked-oversize { letter-spacing:  .25em; }
+.tracked-large { letter-spacing: .1em; }
+.tracked-oversize { letter-spacing: .25em; }
+.tracked { letter-spacing: .1em; }
+/* end generate */
