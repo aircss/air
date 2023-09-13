@@ -79,6 +79,17 @@ module.exports = function (grunt) {
                     'build/measure.css',
                     'build/text-align.css',
                     'build/white-space.css',
+                    'build/display.css',
+                    'build/position.css',
+                    'build/spacing.css',
+                    'build/vertical-align.css',
+                    'build/floats.css',
+                    'build/coordinates.css',
+                    'build/max-widths.css',
+                    'build/widths.css',
+                    'build/heights.css',
+                    'build/scale.css',
+                    'build/overflow.css',
                 ]
             }
         },
@@ -103,6 +114,7 @@ module.exports = function (grunt) {
                     ]},
 
                     {'build/layout.css': [
+                        'build/overflow.css',
                         'build/container.css',
                         'build/display.css',
                         'build/flex.css',
@@ -142,6 +154,7 @@ module.exports = function (grunt) {
                         'build/tables.css',
                         'build/forms.css',
                         'build/links.css',
+                        'build/misc.css',
                     ]},
 
                     // Roll-ups
