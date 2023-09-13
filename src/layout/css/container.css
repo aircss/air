@@ -9,4 +9,6 @@
 
 .container {
   container-type: size;
+  height: inherit;
+  overflow: inherit;
 }
