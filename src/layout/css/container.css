@@ -8,7 +8,5 @@
 
 
 .container {
-  container-type: size;
-  height: inherit;
-  overflow: inherit;
+  container-type: inline-size;
 }
