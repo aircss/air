@@ -27,9 +27,7 @@
 
 */
 
-
-/* Max Width Scale */
-
+/* generate: container-rule */
 .mw1  {  max-width: 1rem; }
 .mw2  {  max-width: 2rem; }
 .mw3  {  max-width: 4rem; }
@@ -40,5 +38,4 @@
 .mw8  {  max-width: 64rem; }
 
 .mw-100  { max-width: 100%; }
-
-.mw-none { max-width: none; }
+/* end generate */
