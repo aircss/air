@@ -21,6 +21,8 @@
 
 */
 
+/* generate: container-rule */
 .fl { float: left; }
 .fr { float: right; }
 .fn { float: none; }
+/* end generate */

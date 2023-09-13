@@ -30,6 +30,7 @@
 
 */
 
+/* generate: container-rule */
 .pa0 { padding: var(--spacing-0, 0); }
 .pa1 { padding: var(--spacing-1, 0.125rem); }
 .pa2 { padding: var(--spacing-2, 0.25rem); }
@@ -282,3 +283,4 @@
   margin-right: auto;
   margin-left: auto;
 }
+/* end generate */

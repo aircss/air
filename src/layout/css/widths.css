@@ -35,8 +35,7 @@
 
 */
 
-/* Width Scale */
-
+/* generate: container-rule */
 .w1 { width: 1rem; }
 .w2 { width: 2rem; }
 .w3 { width: 4rem; }
@@ -63,3 +62,4 @@
 .w-two-thirds { width: calc(100% / 1.5); }
 
 .w-auto { width: auto; }
+/* end generate */

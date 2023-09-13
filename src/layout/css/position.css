@@ -4,13 +4,14 @@
    Docs: http://aircss.io/docs/layout/position/
 
    Media Query Extensions:
-     -ns = not-small
      -m  = medium
      -l  = large
 
 */
 
+/* generate: container-rule */
 .static { position: static; }
-.relative  { position: relative; }
-.absolute  { position: absolute; }
-.fixed  { position: fixed; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+/* end generate */

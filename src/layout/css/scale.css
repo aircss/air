@@ -1,3 +1,4 @@
+/* generate: container-rule */
 .scale-25 {
 	transform: scale(1.25);
 }
@@ -17,3 +18,4 @@
 .scale-200 {
 	transform: scale(4);
 }
+/* end generate */
