@@ -1,40 +1,30 @@
 /*
 
   DISPLAY
-  Docs: http://aircss.io/docs/layout/display
+  Docs: http://aircss.io/docs/layout/display.html
 
   Base:
     d = display
 
   Modifiers:
     n = none
-    b = block
-    ib = inline-block
     f = flex
-    if = inline-flex
-    t = table
-    tc = table-cell
+    b = block
+    i = inline
+    ib = inline-block
 
   Media Query Extensions:
-    -ns = not-small
     -m = medium
     -l = large
 
 */
 
+/* generate: container-rule */
 .dn { display: none; }
 
-.di { display: inline; }
+.df { display: flex; }
 
 .db { display: block; }
+.di { display: inline; }
 .dib { display: inline-block; }
-
-.df, .flex { display: flex; }
-.dif { display: inline-flex; }
-
-.dt { display: table; }
-.dtc { display: table-cell; }
-.dt--fixed {
-  table-layout: fixed;
-  width: 100%;
-}
+/* end generate */
