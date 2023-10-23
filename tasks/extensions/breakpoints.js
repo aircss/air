@@ -1,3 +1,4 @@
+/*  Copyright (c) 2023, Morgan Delahaye. */
 'use strict';
 
 
@@ -10,7 +11,7 @@ const regex = /^\/\* generate: container-rule \*\/[\s\S]*\/\* end generate \*\/$
 
 
 module.exports = function (grunt) {
-    grunt.registerMultiTask('modifiers', 'Generate optional extensions.', function () {
+    grunt.registerMultiTask('breakpoints', 'Generate optional breakpoint extensions.', function () {
         this.files.forEach(filePair => {
             filePair.src.forEach(file => {
                 grunt.log.writeln('Append optional extensions to ' + String(file).cyan);

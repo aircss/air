@@ -57,42 +57,20 @@ module.exports = function (grunt) {
             }
         },
 
-        skins: {
-            template: {
-                options: {
-                    type: 'variables',
-                    variables: 'src/variables/colors.css',
-                },
-
+        breakpoints: {
+            apply: {
                 expand: true,
-                src   : ['build/doc/**/*.html']
+                src : ['build/*.css']
             }
         },
 
-        modifiers: {
-            containers: {
+        hover: {
+            apply: {
                 expand: true,
-                src : [
-                    'build/font-size.css',
-                    'build/font-weight.css',
-                    'build/tracking.css',
-                    'build/measure.css',
-                    'build/text-align.css',
-                    'build/white-space.css',
-                    'build/display.css',
-                    'build/position.css',
-                    'build/spacing.css',
-                    'build/vertical-align.css',
-                    'build/floats.css',
-                    'build/coordinates.css',
-                    'build/max-widths.css',
-                    'build/widths.css',
-                    'build/heights.css',
-                    'build/scale.css',
-                    'build/overflow.css',
-                ]
+                src : ['build/*.css']
             }
         },
+
 
         // -- Concat Config --------------------------------------------------------
 
@@ -120,8 +98,6 @@ module.exports = function (grunt) {
                         'build/flex.css',
                         'build/order.css',
                         'build/align-content.css',
-                        'build/align-items.css',
-                        'build/align-self.css',
                         'build/box-sizing.css',
                         'build/spacing.css',
                         'build/floats.css',
@@ -138,23 +114,27 @@ module.exports = function (grunt) {
 
                     {'build/theming.css': [
                         'build/animate.css',
-                        'build/skins.css',
                         'build/borders.css',
                         'build/border-colors.css',
                         'build/border-radius.css',
                         'build/border-style.css',
                         'build/border-widths.css',
+                        'build/skins.css',
                         'build/filters.css',
                         'build/opacity.css',
                         'build/shadow.css',
                         'build/background-size.css',
+                        'build/outline.css',
+                        'build/pointer.css',
                     ]},
 
                     {'build/elements.css': [
                         'build/tables.css',
                         'build/forms.css',
                         'build/links.css',
+                        'build/lists.css',
                         'build/misc.css',
+                        'build/child.css',
                     ]},
 
                     // Roll-ups
@@ -176,6 +156,7 @@ module.exports = function (grunt) {
                 processors: [
                     require('autoprefixer')(),
                     require('postcss-css-variables')(),
+                    require('postcss-merge-rules')(),
                 ],
             },
             dist: {
@@ -269,6 +250,7 @@ module.exports = function (grunt) {
 
     // Local tasks.
     grunt.loadTasks('tasks/');
+    grunt.loadTasks('tasks/extensions/');
 
     grunt.registerTask('default', ['test', 'build']);
     grunt.registerTask('test', ['csslint']);
@@ -279,8 +261,8 @@ module.exports = function (grunt) {
         'copy:build',
         'copy:doc',
         'generate',
-        'skins',
-        'modifiers:containers',
+        'breakpoints:apply',
+        'hover:apply',
         'concat:build',
         'postcss',
         'csso',
