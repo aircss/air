@@ -9,12 +9,13 @@
 
 */
 
+/* generate: hover-rule */
 /*
   generated content
 .<%= name %> { color: <%= value %>; }
-.hover-<%= name %>:hover { color: <%= value %>; }
-
 .bg--<%= name %> { background-color: <%= value %>; }
-.hover-bg--<%= name %>:hover { background-color: <%= value %>; }
   end of generated content
 */
+
+.bg--transparent { background-color: transparent; }
+/* end generate */
