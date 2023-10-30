@@ -9,7 +9,8 @@
     "lint": "eslint . --ext .js",
     "prepare": "grunt release",
     "test": "grunt test && tap test/*.js --no-coverage",
-    "dev": "npx grunt watch & node serve.js"
+    "dev": "npx grunt watch & node serve.js",
+    "build": "npx grunt build"
   },
   "files": [
     "build/"
