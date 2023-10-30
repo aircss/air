@@ -7,8 +7,13 @@
 */
 
 /* generate: container-rule */
-.top { top: 0; }
-.right { right: 0; }
-.bottom { bottom: 0; }
-.left { left: 0; }
+.top { align-self: flex-start; top: 0; }
+.right { justify-self: flex-end; right: 0; }
+.bottom { align-self: flex-end; bottom: 0; }
+.left { justify-self: flex-start; left: 0; }
+
+.flex-column>.top { justify-self: flex-start; align-self: normal;}
+.flex-column>.bottom { justify-self: flex-end; align-self: normal; }
+.flex-column>.right { align-self: flex-end; justify-self: normal; }
+.flex-column>.left { align-self: flex-start; justify-self: normal; }
 /* end generate */

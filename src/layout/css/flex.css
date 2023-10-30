@@ -9,6 +9,7 @@
 
   Modifiers:
     -auto
+    -grow
     -none
 
     -nowrap
@@ -16,19 +17,17 @@
     -row
     -wrap
 
-  Extensions:
-    -reverse
-
 */
 
-.flex-auto { flex: 1 1 auto; }
-.flex-none { flex: none; }
 
-.flex-nowrap { flex-wrap: nowrap; }
-.flex-column { flex-direction: column; }
+/* generate: container-rule */
 .flex-row { flex-direction: row; }
-.flex-wrap { flex-wrap: wrap; }
+.flex-column { flex-direction: column; }
 
-.flex-column-reverse { flex-direction: column-reverse; }
-.flex-row-reverse { flex-direction: row-reverse; }
-.flex-wrap-reverse { flex-wrap: wrap-reverse; }
+.flex-none { flex: none; }
+.flex-auto { flex: 1 1 auto; }
+.flex-grow { flex-grow: 1; }
+
+.flex-wrap { flex-wrap: wrap; }
+.flex-stretch { align-items: stretch; }
+/* end generate */
