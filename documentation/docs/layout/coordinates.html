@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/air.min.css" />
+    <title>Air</title>
+  </head>
+
+
+  <body class="sans-serif noir-90 bg--noir-10">
+
+    <div class="center w-100 mw8 ph3">
+
+      <h1 class="f-title fw4 i"><a class="link" href="/">Air CSS <span class="f6 noir-50">ver. 1.0.0</span></a></h1>
+
+
+      <h2 class="f-subtitle fw3 i">Coordinates</h2>
+
+      <p class="llm lh-body fw3 tj">
+        The <span class="code f7">top</span>, <span class="code f7">right</span>,
+        <span class="code f7">bottom</span>, and <span class="code f7">left</span> classes determine
+        the final location of positioned elements inside of a relative element and to a lesser
+        extent in a flexbox.
+      </p>
+
+      <h3 class=" mb5 mb6-ns mt5 mt6-ns f1 fw3 i">Mnemonics</h3>
+
+      <div class="cf pb4">
+        <div class="db w-third fl tc b">Bases</div>
+        <div class="db w-third fl tc b">Modifiers</div>
+        <div class="db w-third fl tc b">Optional extensions</div>
+      </div>
+      <div class="flex justify-around items-center code f7">
+        <div class="db w-third tc">
+          <span class="red">top</span><br>
+          <span class="red">right</span><br>
+          <span class="red">bottom</span><br>
+          <span class="red">left</span><br>
+        </div>
+
+        <div class="db w-third tc">
+            <span class="i noir-50">none</span>
+        </div>
+        <div class="db w-third tc">
+          <span class="red">-m</span> = <span class="red">m</span>edium width container<br>
+          <span class="red">-l</span> = <span class="red">l</span>arge width container<br>
+        </div>
+      </div>
+
+
+      <h3 class=" mb5 mb6-ns mt5 mt6-ns f1 fw3 i">Examples</h3>
+
+
+
+
+
+      <div class="flex justify-between w-100">
+
+        <div class="relative w-40 h4 ba pa7 mb4">
+          <div class="absolute top bl b--noir-30 h-100"></div>
+          <div class="absolute left bt b--noir-30 w-100"></div>
+
+          <div class="absolute top bt bw2 b--ecume-80 bg--ecume-60 pa3 tc f7">.top</div>
+          <div class="absolute right br bw2 b--ecume-80 bg--ecume-60 pa3 tc f7">.right</div>
+          <div class="absolute bottom bb bw2 b--ecume-80 bg--ecume-60 pa3 tc f7">.bottom</div>
+          <div class="absolute left bl bw2 b--ecume-80 bg--ecume-60 pa3 tc f7">.left</div>
+
+          <div class="absolute top left bt bl bw2 b--ecume-80 bg--ecume-60 pa3 tc f7">.top .left</div>
+          <div class="absolute top right bt br bw2 b--ecume-80 bg--ecume-60 pa3 tc f7">.top .right</div>
+          <div class="absolute bottom right bb br bw2 b--ecume-80 bg--ecume-60 pa3 tc f7">.bottom .right</div>
+          <div class="absolute bottom left bb bl bw2 b--ecume-80 bg--ecume-60 pa3 tc f7">.bottom .left</div>
+
+          <div class="absolute bg--ecume-60 pa3 f7 i">no coordinates</div>
+        </div>
+
+        <div class="w-50">
+          <pre class="f8 mb4">
+&lt;div class="<span class="red">relative</span> pa7"&gt;
+  &lt;div class="<span class="red">absolute top</span>"&gt;.top&lt;/div&gt;
+  &lt;div class="<span class="red">absolute bottom left</span>"&gt;.bottom .left&lt;/div&gt;
+  &hellip;
+&lt;/div&gt;
+          </pre>
+
+          <p class="lh-body fw3 tj">
+            This example shows how absolute elements are absolutely positioned inside of a relative
+            element. The absolute element outer margin snapping to the containing element is
+            highlighted in each case.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

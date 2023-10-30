@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/air.min.css" />
+    <title>Air</title>
+  </head>
+
+
+  <body class="sans-serif noir-90 bg--noir-10">
+
+    <div class="center w-100 mw8 ph3">
+
+      <h1 class="f-title fw4 i"><a class="link" href="/">Air CSS <span class="f6 noir-50">ver. 1.0.0</span></a></h1>
+
+
+      <h2 class="f-subtitle fw3 i">Position</h2>
+
+      <p class="llm lh-body fw3 tj">
+        Html elements are initially set to a <span class="i">position</span> of
+        <span class="code f7">static</span>. Air provides classes for setting position to be
+        <span class="code f7 red">relative</span>, <span class="code f7 red">absolute</span>,
+        <span class="code f7 red">sticky</span> or <span class="code f7 red">fixed</span>:
+      </p>
+
+      <p class="llm lh-body fw3 tj">
+        This module should be used in conjunction with the <a class="link fw4 ecume-80 hover-red" href="/docs/layout/coordinates.html">coordinates module</a>.
+      </p>
+
+      <p class="fw3 tj ">
+        Source: <a class="link fw4 ecume-80 hover-red" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">position - CSS: Cascading Style Sheets | MDN</a>
+      </p>
+
+
+      <h3 class=" mb5 mb6-ns mt5 mt6-ns f1 fw3 i">Mnemonics</h3>
+
+      <div class="cf pb4">
+        <div class="db w-third fl tc b">Bases</div>
+        <div class="db w-third fl tc b">Modifiers</div>
+        <div class="db w-third fl tc b">Optional extensions</div>
+      </div>
+      <div class="flex justify-around items-center code f7">
+        <div class="db w-third tc">
+          <span class="red">relative</span><br>
+          <span class="red">absolute</span><br>
+          <span class="red">sticky</span><br>
+          <span class="red">fixed</span><br>
+        </div>
+
+        <div class="db w-third tc">
+            <span class="i noir-50">none</span>
+        </div>
+        <div class="db w-third tc">
+          <span class="red">-m</span> = <span class="red">m</span>edium width container<br>
+          <span class="red">-l</span> = <span class="red">l</span>arge width container<br>
+        </div>
+      </div>
+
+      <h3 class=" mb5 mb6-ns mt5 mt6-ns f1 fw3 i">Description</h3>
+
+      <p class="llm lh-body fw3 tj">
+        <span class="code f7 red">relative</span>:
+        Relatively positioned elements offer the ability to offset the position of an element
+        without affecting the position of any elements around it.
+      </p>
+
+      <p class="llm lh-body fw3 tj">
+        <span class="code f7 red">absolute</span>:
+        Absolute elements are absolutely positioned inside of a relative element. You can use
+        absolute positioning to stretch elements making sure they fill the width and height of a
+        relative container.
+      </p>
+
+      <p class="llm lh-body fw3 tj">
+        <span class="code f7 red">sticky</span>:
+        Sticky elements are positioned normally in the document flow, and then offset relative to
+        its nearest scrolling ancestor and containing block.
+      </p>
+
+      <p class="llm lh-body fw3 tj">
+        <span class="code f7 red">fixed</span>:
+        When fixed, the element is removed from the normal document flow, and no space is created
+        for the element in the page layout. The element is positioned relative to its initial
+        containing block, which is the viewport in the case of visual media.
+      </p>
+
+
+    </div>
+  </body>
+</html>
