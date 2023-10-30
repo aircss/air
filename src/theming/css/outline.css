@@ -1,0 +1,4 @@
+/* csslint outline-none: false */
+.outline:focus { outline: 1px solid; }
+.outline-transparent:focus { outline: 1px solid transparent; }
+.outline-0:focus { outline: 0; }
