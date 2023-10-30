@@ -1,3 +1,2 @@
-.no-shadow { box-shadow: none; }
 .shadow { box-shadow: 4px 4px 8px 0 rgba( 0, 0, 0, 0.2 ); }
 .in-shadow { box-shadow: inset 4px 4px 8px 0 rgba( 0, 0, 0, 0.2 ); }
