@@ -5,18 +5,11 @@
 
 */
 
+
+/* generate: hover-rule */
 .o-100 { opacity: 1; }
-.o-90 { opacity: .9; }
 .o-75 { opacity: .75; }
 .o-50 { opacity: .5; }
 .o-25 { opacity: .25; }
-.o-10 { opacity: .1; }
 .o-0 { opacity: 0; }
-
-.o-100-hvr:hover { opacity: 1; }
-.o-90-hvr:hover { opacity: .9; }
-.o-75-hvr:hover { opacity: .75; }
-.o-50-hvr:hover { opacity: .5; }
-.o-25-hvr:hover { opacity: .25; }
-.o-10-hvr:hover { opacity: .1; }
-.o-0-hvr:hover { opacity: 0; }
+/* end generate */

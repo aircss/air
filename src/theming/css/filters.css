@@ -10,6 +10,7 @@
 */
 
 
+/* generate: hover-rule */
 .filter-none { filter: none; }
 
 .filter-shadow-none { filter: drop-shadow(0); }
@@ -20,18 +21,5 @@
 .filter-blur-none { filter: blur(0); }
 .filter-blur-25 { filter: blur(0.5rem); }
 .filter-blur-50 { filter: blur(1rem); }
-.filter-blur-75 { filter: blur(2rem); }
 .filter-blur-100 { filter: blur(4rem); }
-
-.hover-filter-none:hover { filter: none; }
-
-.hover-filter-shadow-none:hover { filter: drop-shadow(0); }
-.hover-filter-shadow-25:hover { filter: drop-shadow(0 0 0.05rem #bbb); }
-.hover-filter-shadow-50:hover { filter: drop-shadow(0 0 0.05rem #999); }
-.hover-filter-shadow-100:hover { filter: drop-shadow(0 0 0.05rem #000); }
-
-.hover-filter-blur-none:hover { filter: blur(0); }
-.hover-filter-blur-25:hover { filter: blur(0.5rem); }
-.hover-filter-blur-50:hover { filter: blur(1rem); }
-.hover-filter-blur-75:hover { filter: blur(2rem); }
-.hover-filter-blur-100:hover { filter: blur(4rem); }
+/* end generate */
