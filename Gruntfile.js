@@ -24,17 +24,10 @@ module.exports = function (grunt) {
             },
 
             build: {
-                src    : 'src/**/css/*.css',
+                src    : 'src/**/*.css',
                 dest   : 'build/',
                 expand : true,
                 flatten: true
-            },
-
-            doc: {
-                src    : '**/*.html',
-                cwd    : 'documentation/',
-                dest   : 'build/',
-                expand : true,
             },
 
             release: {
@@ -225,7 +218,7 @@ module.exports = function (grunt) {
 
         observe: {
             src: {
-                files: ['src/**/*', 'documentation/**'],
+                files: ['src/**'],
                 tasks: ['test', 'build'],
 
                 options: {
@@ -259,7 +252,6 @@ module.exports = function (grunt) {
         'clean:build',
         'copy:assets',
         'copy:build',
-        'copy:doc',
         'generate',
         'breakpoints:apply',
         'hover:apply',
