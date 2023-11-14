@@ -1,10 +1,10 @@
 /*
-  MEASURE
+  Line length (measure)
   Docs: http://aircss.io/docs/typography/measure.html
 
-  Measure or line length is the distance between the left and right edges of a text block. Overly
-  long lines are a common problem, but they're easy to correct. Shorter lines will make a big
-  difference in the legibility and professionalism of your layout.
+  Measure or line length is the distance between the left and right edges of a text
+  block. Overly long lines are a common problem, but they're easy to correct. Shorter
+  lines will make a big difference in the legibility and professionalism of your layout.
 
 
   Mnemonics
@@ -26,12 +26,14 @@
   Shorthand
   =========
 
-  It is possible to use the class name `measure` instead of `measure-medium`.
+  It is possible to use the class name `llm` instead of `ll-medium`.
 
 */
 
 /* generate: container-rule */
-.lln { max-width: 45ch; }
+.ll-narrow { max-width: 45ch; }
+.ll-medium { max-width: 66ch; }
+.ll-wide { max-width: 80ch; }
+
 .llm { max-width: 66ch; }
-.llw { max-width: 80ch; }
 /* end generate */

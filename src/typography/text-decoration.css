@@ -1,0 +1,38 @@
+/*
+  TEXT DECORATION
+  Docs: http://aircss.io/docs/typography/text-decoration.html
+
+  Underline and strikethrough decorations on a text are respectively used to add an
+  emphasis or epanorthosis to all or part of it.
+
+
+  Mnemonics
+  =========
+
+  Bases:
+    td = text decoration
+
+  Modifiers
+    -normal
+    -strike
+    -underline
+
+  Optional extensions:
+    -hvr = styled on hovering
+
+
+  Shorthand
+  =========
+
+  It is possible to use the class name `u` instead of `td-underline`.
+
+*/
+
+
+/* generate: hover-rule */
+.td-normal { text-decoration: none;}
+.td-strike { text-decoration: line-through; }
+.td-underline { text-decoration: underline; }
+
+.u { text-decoration: underline; }
+/* end generate */

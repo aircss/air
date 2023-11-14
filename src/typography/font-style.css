@@ -12,8 +12,21 @@
   =========
 
   Bases:
-    i = italic
+    fs = font-style
+
+  Modifiers
+    -normal
+    -italic
+
+
+  Shorthand
+  =========
+
+  It is possible to use the class name `i` instead of `fs-italic`.
 
 */
 
-.italic, .i { font-style: italic; }
+.fs-normal { font-style: normal; }
+.fs-italic { font-style: italic; }
+
+.i { font-style: italic; }
