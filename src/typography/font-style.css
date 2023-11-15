@@ -14,7 +14,7 @@
   Bases:
     fs = font-style
 
-  Modifiers
+  Modifiers:
     -normal
     -italic
 
