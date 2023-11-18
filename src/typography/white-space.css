@@ -22,9 +22,8 @@
 */
 
 /* generate: container-rule */
-.nowrap { white-space: nowrap; }
 .pre { white-space: pre; }
-
+.nowrap { white-space: nowrap; }
 .truncate {
     overflow: hidden;
     white-space: nowrap;

@@ -19,6 +19,22 @@
 
 */
 
+code, .code {
+  font-family: SFMono-Regular,
+               Menlo,
+               Monaco,
+               Consolas,
+               "Liberation Mono",
+               "Courier New",
+               monospace;
+}
+
+.serif {
+  font-family: georgia,
+               times,
+               serif;
+}
+
 .sans-serif {
   font-family: system-ui,
                -apple-system,
@@ -36,20 +52,4 @@
                "Apple Color Emoji",
                "Segoe UI Emoji",
                "Segoe UI Symbol";
-}
-
-.serif {
-  font-family: georgia,
-               times,
-               serif;
-}
-
-code, .code {
-  font-family: SFMono-Regular,
-               Menlo,
-               Monaco,
-               Consolas,
-               "Liberation Mono",
-               "Courier New",
-               monospace;
 }
