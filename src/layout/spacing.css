@@ -28,6 +28,9 @@
     7 = 7th step in spacing scale
     8 = 8th step in spacing scale
 
+  Optional extensions:
+    -m  = medium
+    -l  = large
 */
 
 /* generate: container-rule */
@@ -277,10 +280,5 @@
 .mh8  {
   margin-left: var(--spacing-8, 16rem);
   margin-right: var(--spacing-8, 16rem);
-}
-
-.center {
-  margin-right: auto;
-  margin-left: auto;
 }
 /* end generate */

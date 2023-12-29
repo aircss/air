@@ -7,8 +7,6 @@
      mw = max-width
 
    Modifiers
-     1 = 1st step in width scale
-     2 = 2nd step in width scale
      3 = 3rd step in width scale
      4 = 4th step in width scale
      5 = 5th step in width scale
@@ -18,9 +16,6 @@
 
      -100 = literal value 100%
 
-     -none  = string value none
-
-
    Media Query Extensions:
      -m  = medium
      -l  = large
@@ -28,8 +23,6 @@
 */
 
 /* generate: container-rule */
-.mw1  {  max-width: 1rem; }
-.mw2  {  max-width: 2rem; }
 .mw3  {  max-width: 4rem; }
 .mw4  {  max-width: 8rem; }
 .mw5  {  max-width: 16rem; }

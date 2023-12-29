@@ -1,36 +1,32 @@
 /*
+  HEIGHTS
+  Docs: http://aircss.io/docs/layout/heights/
 
-   HEIGHTS
-   Docs: http://aircss.io/docs/layout/heights/
+  Base:
+    h = height
 
-   Base:
-     h = height
-     min-h = min-height
-     min-vh = min-height vertical screen height
-     vh = vertical screen height
+  Modifiers
+    1 = 1st step in height scale
+    2 = 2nd step in height scale
+    3 = 3rd step in height scale
+    4 = 4th step in height scale
+    5 = 5th step in height scale
+    6 = 6th step in height scale
+    7 = 7th step in height scale
+    8 = 8th step in height scale
 
-   Modifiers
-     1 = 1st step in height scale
-     2 = 2nd step in height scale
-     3 = 3rd step in height scale
-     4 = 4th step in height scale
-     5 = 5th step in height scale
+    -25   = literal value 25%
+    -50   = literal value 50%
+    -75   = literal value 75%
+    -100  = literal value 100%
 
-     -25   = literal value 25%
-     -50   = literal value 50%
-     -75   = literal value 75%
-     -100  = literal value 100%
+    -auto = string value of auto
 
-     -auto = string value of auto
-     -inherit = string value of inherit
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
+  Optional extensions:
+    -m  = medium
+    -l  = large
 
 */
-
 
 /* generate: container-rule */
 .h1 { height: 1rem; }
@@ -47,7 +43,5 @@
 .h-75 { height:  75%; }
 .h-100 { height: 100%; }
 
-.h-vp { height: 100vh; }
 .h-auto { height: auto; }
-.h-inherit { height: inherit; }
 /* end generate */
