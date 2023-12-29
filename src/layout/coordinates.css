@@ -1,19 +1,26 @@
 /*
 
-   COORDINATES
+  COORDINATES
+  Docs: https://aircss.io/docs/layout/coordinates.html
 
-   Use in combination with the position module.
+
+  The coordinates sets where an element is positioned inside of a document or another
+  element.
+
+  Mnemonics
+  =========
+
+  Bases:
+    top
+    right
+    bottom
+    left
 
 */
 
 /* generate: container-rule */
-.top { align-self: flex-start; top: 0; }
-.right { justify-self: flex-end; right: 0; }
-.bottom { align-self: flex-end; bottom: 0; }
-.left { justify-self: flex-start; left: 0; }
-
-.flex-column>.top { justify-self: flex-start; align-self: normal;}
-.flex-column>.bottom { justify-self: flex-end; align-self: normal; }
-.flex-column>.right { align-self: flex-end; justify-self: normal; }
-.flex-column>.left { align-self: flex-start; justify-self: normal; }
+.top { top: 0; }
+.right { right: 0; }
+.bottom { bottom: 0; }
+.left { left: 0; }
 /* end generate */

@@ -1,17 +1,30 @@
 /*
 
-   POSITIONING
-   Docs: http://aircss.io/docs/layout/position/
+  POSITION
+  Docs: https://aircss.io/docs/layout/position.html
 
-   Media Query Extensions:
-     -m  = medium
-     -l  = large
+  The position sets how an element is positioned in a document. This module should be
+  used in conjunction with the coordinates module.
+
+
+  Mnemonics
+  =========
+
+  Bases:
+    fixed
+    absolute
+    relative
+    sticky
+
+  Optional extensions:
+    -m  = medium
+    -l  = large
 
 */
 
 /* generate: container-rule */
-.relative { position: relative; }
-.absolute { position: absolute; }
 .fixed { position: fixed; }
+.absolute { position: absolute; }
+.relative { position: relative; }
 .sticky { position: sticky; }
 /* end generate */

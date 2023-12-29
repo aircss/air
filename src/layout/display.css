@@ -3,11 +3,11 @@
   DISPLAY
   Docs: http://aircss.io/docs/layout/display.html
 
-  Formally, the display property sets an element's inner and outer display types. The outer type
-  sets an element's participation in flow layout; the inner type sets the layout of children. Some
-  values of display are fully defined in their own individual specifications; for example the detail
-  of what happens when display: flex is declared is defined in the CSS Flexible Box Model
-  specification.
+  Formally, the display property sets an element's inner and outer display types. The
+  outer type sets an element's participation in flow layout; the inner type sets the
+  layout of children. Some values of display are fully defined in their own individual
+  specifications; for example the detail of what happens when display: flex is declared
+  is defined in the CSS Flexible Box Model specification.
 
 
   Mnemonics
@@ -30,10 +30,7 @@
 
 /* generate: container-rule */
 .dn { display: none; }
-.df { display: flex; }
 .db { display: block; }
 .di { display: inline; }
 .dib { display: inline-block; }
-
-.flex { display: flex; }
 /* end generate */
