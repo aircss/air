@@ -1,33 +1,31 @@
 /*
 
   FLEXBOX
+  Docs: http://aircss.io/docs/layout/flexbox.html
 
-  Docs: http://aircss.io/docs/layout/flex
-
-  Base:
-    flex
-
-  Modifiers:
-    -auto
-    -grow
-    -none
-
-    -nowrap
-    -column
-    -row
-    -wrap
+  Flexboxes are first-class citizens in aircss to build advanced layouts. Their
+  use is made simple through an expressive set of dedicated classes to 
+  configure the containers and their child items.
 
 */
 
-
 /* generate: container-rule */
-.flex-row { flex-direction: row; }
-.flex-column { flex-direction: column; }
+.flex { display: flex; }
 
-.flex-none { flex: none; }
-.flex-auto { flex: 1 1 auto; }
-.flex-grow { flex-grow: 1; }
+.row { flex-direction: row; }
+.column { flex-direction: column; }
+.reverse.row { flex-direction: row-reverse; }
+.reverse.column { flex-direction: column-reverse; }
 
-.flex-wrap { flex-wrap: wrap; }
-.flex-stretch { align-items: stretch; }
+.evenly-spaced { justify-content: space-evenly; }
+.evenly-filled { justify-content: space-between; }
+
+.wrapped { flex-wrap: wrap; }
+
+.grow { flex: auto; }
+.noflex { flex: none; }
+
+.center { align-self: center; }
+.start  { align-self: flex-start; }
+.end    { align-self: flex-end; }
 /* end generate */
