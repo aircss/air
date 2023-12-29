@@ -4,20 +4,24 @@
    FLOATS
    http://aircss.io/docs/layout/floats/
 
-   1. Floated elements are automatically rendered as block level elements.
-   2. Don't forget to clearfix your floats with .cf
+  1. Floated elements are automatically rendered as block level elements.
+  2. Don't forget to clearfix your floats with .cf
 
-   Base:
-     f = float
 
-   Modifiers:
-     l = left
-     r = right
-     n = none
+  Mnemonics
+  =========
 
-   Media Query Extensions:
-     -m  = medium
-     -l  = large
+  Bases:
+    f = float
+
+  Modifiers:
+    l = left
+    r = right
+    n = none
+
+  Optional extensions:
+    -m = medium
+    -l = large
 
 */
 

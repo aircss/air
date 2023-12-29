@@ -2,7 +2,20 @@
 
   VERTICAL ALIGN
 
-  Media Query Extensions:
+  Mnemonics
+  =========
+
+  Bases:
+    v = vertical
+
+  Modifiers:
+    -base
+
+    -top = align top edges
+    -mid = center within the row
+    -btm = align bottom egdes
+
+  Optional extensions:
     -m  = medium
     -l  = large
 
@@ -10,7 +23,7 @@
 
 /* generate: container-rule */
 .v-base     { vertical-align: baseline; }
-.v-mid      { vertical-align: middle; align-self: center;}
 .v-top      { vertical-align: top; }
-.v-btm      { vertical-align: bottom; }
+.v-mid      { vertical-align: middle; }
+.v-btm      { vertical-align: bottom;}
 /* end generate */
