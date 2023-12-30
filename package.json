@@ -1,20 +1,26 @@
 {
   "name": "aircss",
-  "version": "1.1.0",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/aircss/air.git"
-  },
-  "scripts": {
-    "lint": "eslint . --ext .js",
-    "prepare": "grunt release",
-    "test": "grunt test && tap test/*.js --no-coverage",
-    "dev": "npx grunt watch & node serve.js",
-    "build": "npx grunt build"
-  },
-  "files": [
-    "build/"
+  "version": "2.2.0",
+  "description": "Air is a lightweight functional CSS library.",
+  "author": "Morgan Delahaye <morgan.delahaye@tutanota.com>",
+  "homepage": "https://aircss.io",
+
+  "style": "build/air.min.css",
+  "main": "build/air.min.css",
+
+  "files": ["build/"],
+  "repository": "aircss/air",
+  "license": "BSD-2-Clause",
+
+  "keywords": [
+    "air",
+    "css",
+    "aircss",
+    "responsive",
+    "mobile-first",
+    "front-end"
   ],
+
   "devDependencies": {
     "@lodder/grunt-postcss": "^3.1.1",
     "autoprefixer": "^10.4.2",
@@ -29,39 +35,16 @@
     "grunt-contrib-csslint": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-csso": "^2.2.4",
-    "husky": "^8.0.1",
     "normalize.css": "^8.0.1",
     "postcss": "^8.4.28",
     "postcss-css-variables": "^0.19.0",
+    "postcss-merge-rules": "^6.0.1",
     "tap": "^16.0.0"
   },
-  "description": "Air is a lightweight functional CSS library.",
-  "bugs": {
-    "url": "https://github.com/aircss/air/issues"
-  },
-  "homepage": "https://aircss.io",
-  "main": "index.js",
-  "browser": "build/air.min.css",
-  "style": "build/air.css",
-  "keywords": [
-    "air",
-    "css",
-    "aircss",
-    "responsive",
-    "mobile-first",
-    "front-end"
-  ],
-  "authors": [
-    "Morgan Delahaye <morgan.delahaye@tutanota.com>"
-  ],
-  "license": "BSD-2-Clause",
-  "browserslist": "> 1%",
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test"
-    }
-  },
-  "dependencies": {
-    "postcss-merge-rules": "^6.0.1"
+  "scripts": {
+    "prepare": "grunt release",
+    "test": "grunt test && tap test/*.js --no-coverage",
+    "dev": "npx grunt watch",
+    "build": "npx grunt build"
   }
 }
