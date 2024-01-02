@@ -28,6 +28,8 @@
     7 = 7th step in spacing scale
     8 = 8th step in spacing scale
 
+    auto = automatic margin
+
   Optional extensions:
     -m  = medium
     -l  = large
@@ -280,5 +282,9 @@
 .mh8  {
   margin-left: var(--spacing-8, 16rem);
   margin-right: var(--spacing-8, 16rem);
+}
+
+.m-auto {
+  margin: auto;
 }
 /* end generate */
